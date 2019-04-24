@@ -51,7 +51,7 @@ const error = {
 
 const createErrorInformation = (errorCode, extensionList) => {
   return {
-    errorCode,
+    errorCode: `${errorCode}`,
     errorDescription: error[errorCode],
     extensionList
   }
@@ -72,7 +72,7 @@ const getErrorInformation = (errorCode, appendDescription) => {
     }
   }
   return {
-    errorCode,
+    errorCode:  `${errorCode}`,
     errorDescription
   }
 }
